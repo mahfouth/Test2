@@ -5,6 +5,8 @@
  */
 package com.mycompany.test2;
 
+import java.util.Random;
+
 /**
  *
  * @author mahfo
@@ -12,7 +14,11 @@ package com.mycompany.test2;
 public class NewClass {
     
     public static void main(String args[]){
-        System.out.println("test");
-        System.out.println("test1 to test2");
+        String s = "PdfIlnk= http://twin.sci-hub.tw/4d56039b47feaab3a729f5db0ab2223f/malaquias2017.pdf#view=FitH";
+        
+        int pdfOndex = s.indexOf("#");
+       
+        String pdfName = s.substring(0,pdfOndex);
+        System.out.println(pdfName);
     }
 }
